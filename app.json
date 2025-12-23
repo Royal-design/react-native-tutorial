@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "nativewind",
     "name": "nativewind",
     "slug": "nativewind",
     "version": "1.0.0",
@@ -26,6 +27,7 @@
     "web": {
       "bundler": "metro",
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": ["expo-router"]
   }
 }
