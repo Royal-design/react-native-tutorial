@@ -20,9 +20,34 @@ export default function App() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   return (
     <View className="flex-1 bg-green-400">
-      <Text className="mt-6  text-xl text-center py-4 bg-white">
-        Welcome Emmy!
+      <StatusBar barStyle="dark-content" backgroundColor="yellow" />
+      <Text className="mt-6  text-xl text-center  py-4 bg-white">
+        Welcome Emmanuel!
       </Text>
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        className="mt-4 mb-2 px-4"
+      >
+        <View className="rounded-md bg-yellow-50 border shadow-sm w-52 h-32 justify-center items-center mr-2">
+          <Text>Box 1</Text>
+        </View>
+        <View className="rounded-md bg-yellow-50 border shadow-sm w-52 h-32 justify-center items-center mr-2">
+          <Text>Box 2</Text>
+        </View>
+        <View className="rounded-md bg-yellow-50 border shadow-sm w-52 h-32 justify-center items-center">
+          <Text>Box 3</Text>
+        </View>
+      </ScrollView>
+      <View className="p-2">
+        <View className="h-12 w-full bg-yellow-200 border border-gray-500 flex-col justify-center items-center">
+          <Text className="self-center">Box1</Text>
+        </View>
+        <View className="h-12 w-full bg-yellow-300 border border-gray-500 flex-col justify-center items-center">
+          <Text className="self-center">Box2</Text>
+        </View>
+      </View>
+
       <Greet name="Ola" />
       <View className="flex-row items-center justify-center py-2">
         <Image source={speech} className="w-52 h-52 rounded-md mx-auto mt-4" />
@@ -34,7 +59,7 @@ export default function App() {
         />
       </View>
       <Button
-        title="Press me"
+        title="Open Modal"
         color="#87039c"
         onPress={() => setIsModalVisible(!isModalVisible)}
       />
@@ -48,11 +73,11 @@ export default function App() {
         }
       />
       <Pressable
-        className="bg-red-200"
+        className="bg-blue-500"
         onPress={() => Alert.alert("Button pressed")}
       >
         <Text className="text-white px-4 py-2 rounded-md font-bold text-center">
-          Press me
+          Press me now
         </Text>
       </Pressable>
 
@@ -148,7 +173,6 @@ export default function App() {
           perspiciatis iure voluptate suscipit?
         </Text>
       </ScrollView>
-      <StatusBar barStyle="light-content" backgroundColor="red" />
     </View>
   );
 }
