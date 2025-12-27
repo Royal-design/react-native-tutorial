@@ -16,6 +16,7 @@ export default function TabsLayout() {
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="home" color={color} size={size} />
           ),
+          tabBarBadge: 2,
         }}
       />
 
