@@ -21,6 +21,12 @@ export default function HomePage() {
         className="mb-4 self-center space-x-7"
       >
         <Link
+          href="/products"
+          className="text-white mr-2 bg-blue-500 rounded-md px-4 py-3 "
+        >
+          Product
+        </Link>
+        <Link
           href="/(tabs)"
           className="text-white mr-2 bg-blue-500 rounded-md px-4 py-3 "
         >

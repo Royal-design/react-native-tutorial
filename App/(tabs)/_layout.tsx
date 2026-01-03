@@ -7,6 +7,7 @@ export default function TabsLayout() {
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: "#2563eb",
+        tabBarShowLabel: false,
       }}
     >
       <Tabs.Screen
@@ -17,8 +18,7 @@ export default function TabsLayout() {
             <Ionicons name="home" color={color} size={size} />
           ),
           tabBarBadge: 2,
-          tabBarShowLabel: true,
-          tabBarLabel: "Home",
+          tabBarBadgeStyle: { color: "white", backgroundColor: "blue" },
         }}
       />
 
