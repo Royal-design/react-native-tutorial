@@ -4,7 +4,14 @@ import { Ionicons } from "@expo/vector-icons";
 
 export default function DrawerLayout() {
   return (
-    <Drawer>
+    <Drawer
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: "gray",
+        },
+        headerTintColor: "white",
+      }}
+    >
       <Drawer.Screen
         name="index"
         options={{
@@ -15,11 +22,11 @@ export default function DrawerLayout() {
         }}
       />
       <Drawer.Screen
-        name="users"
+        name="settings"
         options={{
-          title: "Users",
+          title: "Settings",
           drawerIcon: ({ color, size }: { color: string; size: number }) => (
-            <Ionicons name="people-outline" size={size} color={color} />
+            <Ionicons name="settings" size={size} color={color} />
           ),
         }}
       />
