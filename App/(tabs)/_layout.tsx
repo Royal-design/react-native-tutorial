@@ -5,9 +5,11 @@ export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
-        headerShown: false,
+        headerShown: true,
         tabBarActiveTintColor: "#2563eb",
-        tabBarShowLabel: false,
+        tabBarShowLabel: true,
+        headerTitle: "Recipe",
+        headerTitleAlign: "center",
       }}
     >
       <Tabs.Screen
@@ -18,6 +20,7 @@ export default function TabsLayout() {
             <Ionicons name="home" color={color} size={size} />
           ),
           tabBarBadge: 2,
+
           tabBarBadgeStyle: { color: "white", backgroundColor: "blue" },
         }}
       />
